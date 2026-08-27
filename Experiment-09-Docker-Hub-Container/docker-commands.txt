@@ -1,0 +1,14 @@
+# Ubuntu
+docker container run -it ubuntu top
+
+# Enter a running container
+docker container exec -it <CONTAINER_ID> bash
+
+# Nginx
+docker container run --detach --publish 8080:80 --name nginx nginx
+
+# MongoDB
+docker container run --detach --publish 8081:27017 --name mongo mongo:4.4
+
+# Check containers
+docker container ls
